@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import { PATHS } from '../../router/paths';
+import styles from './Navbar.module.css';
 
 const Navbar = () => {
     return (
-        <nav className="navbar">
-            <Link to="/">Home</Link>
-            <Link to="/servicios">Servicios</Link>
-            <Link to="/proyectos">Proyectos</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contacto">Contacto</Link>
+        <nav className={styles.navbar}>
+            <Link to={PATHS.HOME}>Home</Link>
+            <Link to={PATHS.SERVICIOS}>Servicios</Link>
+            <Link to={PATHS.PROYECTOS}>Proyectos</Link>
+            <Link to={PATHS.ABOUT}>About</Link>
+            <Link to={PATHS.CONTACTO}>Contacto</Link>
         </nav>
     );
 };

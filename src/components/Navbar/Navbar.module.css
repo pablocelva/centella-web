@@ -1,0 +1,21 @@
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+nav a:focus {
+  font-weight: bold;
+  color: var(--color-text);
+  border-bottom: 2px solid;
+}
